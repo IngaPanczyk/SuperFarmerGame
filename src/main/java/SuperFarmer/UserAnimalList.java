@@ -112,5 +112,24 @@ public class UserAnimalList {
         }
 
     public ArrayList exchange() {
+        return null;
+    }
+
+    public ArrayList exRabbittoScheep(ArrayList greedingUser) {
+        greedingUser.remove(Animal.RABBIT);
+        greedingUser.remove(Animal.RABBIT);
+        greedingUser.remove(Animal.RABBIT);
+        greedingUser.remove(Animal.RABBIT);
+        greedingUser.remove(Animal.RABBIT);
+        greedingUser.remove(Animal.RABBIT);
+        greedingUser.add(Animal.RABBIT);
+        greedingUser.add(Animal.SHEEP);
+        greedingUser.add(Animal.PIG);
+        greedingUser.add(Animal.COW);
+        greedingUser.add(Animal.HORSE);
+        return  greedingUser;
+    }
+
+    public void exSheepToPig(ArrayList greedingUser) {
     }
 }
