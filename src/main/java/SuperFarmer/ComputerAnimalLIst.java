@@ -8,7 +8,7 @@ public class ComputerAnimalLIst {
     public boolean checkAnimalsInCollection(ArrayList computerListAfterGreeding) {
 
        if (computerListAfterGreeding.contains(Animal.RABBIT)) {
-            System.out.println(computerListAfterGreeding.contains(Animal.RABBIT));
+            System.out.println("Lista zawiera królika: " + computerListAfterGreeding.contains(Animal.RABBIT));
         } if (computerListAfterGreeding.contains(Animal.SHEEP)) {
            System.out.println("SHEEP: " + computerListAfterGreeding.contains(Animal.SHEEP));
 
@@ -19,9 +19,8 @@ public class ComputerAnimalLIst {
         }  if (computerListAfterGreeding.contains(Animal.HORSE)) {
             return true;
         } else {
-
+            System.out.println("Nie ma nic");
         }
-        System.out.println("Nie ma nic");
         return false;
     }
 
@@ -115,5 +114,20 @@ public class ComputerAnimalLIst {
     public ArrayList getList() {
         ArrayList animalList = new ArrayList();
         return animalList;
+    }
+
+    public ArrayList exRabbitToScheep(ArrayList greedingComputer) {
+        greedingComputer.remove(Animal.RABBIT);
+        greedingComputer.remove(Animal.RABBIT);
+        greedingComputer.remove(Animal.RABBIT);
+        greedingComputer.remove(Animal.RABBIT);
+        greedingComputer.remove(Animal.RABBIT);
+        greedingComputer.remove(Animal.RABBIT);
+        greedingComputer.add(Animal.RABBIT);
+        greedingComputer.add(Animal.SHEEP);
+        greedingComputer.add(Animal.PIG);
+        greedingComputer.add(Animal.COW);
+        greedingComputer.add(Animal.HORSE);
+        return  greedingComputer;
     }
 }
