@@ -28,7 +28,8 @@ public class Game {
 
             ArrayList userListAfterGreeding = userAnimalList.greedingUser(userList);
             System.out.println("Users animals: " + userListAfterGreeding);
-            if (userListAfterGreeding.size()>=2) {
+            //ZAMIANA
+            /*if (userListAfterGreeding.size()>=2) {
                 System.out.println("Exchange! 6 RABBIT = 1 SHEEP - (Press 1), 3 SHEEP = 1 PIG - (Press 2), 2 PIG = 1 COW - (Press 3), 2 COW = 1 HORSE - (Press 4), EXIT- (Press 0)");
                 int animalToChange = scanner.nextInt();
                 if (animalToChange == 1) {
@@ -41,13 +42,10 @@ public class Game {
                     userAnimalList.exCowToHorse(userListAfterGreeding);
                 }
                 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-            }
+            }*/
             getWinnerUser = userAnimalList.checkAnimalsInCollection(userListAfterGreeding);
             System.out.println("User after greeding has " + userListAfterGreeding.size() + " animals");
             System.out.println("------------------------------------------------------------------------");
-
-
-
 
 
             ArrayList computerListAfterGreeding = computerAnimalLIst.greedingComputer(computerList);

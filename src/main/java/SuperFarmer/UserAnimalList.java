@@ -1,5 +1,6 @@
 package SuperFarmer;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -21,10 +22,14 @@ public class UserAnimalList {
         return false;
     }
 
+
     public ArrayList greedingUser(ArrayList userAnimalList) {
-        Dice dice = new Dice();
+       /* Dice dice = new Dice();
         Animal orange = dice.orangeDice();
-        Animal blue = dice.blueDice();
+        Animal blue = dice.blueDice();*/
+        Dice dice = new Dice();
+        Animal orange = dice.throwOrangeDice();
+        Animal blue = dice.throwBlueDice();
         System.out.println("User move: " + orange + " " + blue);
 
         if (orange == blue) {
